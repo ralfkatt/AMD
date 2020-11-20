@@ -1,8 +1,10 @@
 public class Matcher {
+    Learner learner;
 
-    public Matcher(){}
-
+    public Matcher(){
+        this.learner = new Learner();
+    }
     public Match createMatch(Request request){
-        return Learner.createMatch(request);
+        return this.learner.createMatch(request);
     }
 }
