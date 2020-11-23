@@ -6,9 +6,9 @@ class ResponderPreference extends Preferences {
     public String typeOfLabour;
 
     // Constructor Declaration of Class
-    public ResponderPreference(Date date, int time, int duration, int commlanguage, String location,
+    public ResponderPreference(Date date, int time, int duration, String commLanguage, String location,
             String typeOfLabour) {
-        super(date, time, duration, commlanguage);
+        super(date, time, duration, commLanguage);
         this.location = location;
         this.typeOfLabour = typeOfLabour;
     }

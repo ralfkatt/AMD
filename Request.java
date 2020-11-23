@@ -8,7 +8,7 @@ public class Request {
     public String location;
     public int price;
     public int status;
-    public Preferences requestPreference;
+    public Preferences requestPreferences = null;
 
     // Constructor Declaration of Class
     public Request(String typeOfLabour, String desc, Date date, String location, int price, int status) {
@@ -33,6 +33,6 @@ public class Request {
     }
 
     public void setPreferences(String driversLicence, Date date, int time, int duration, String commLanguage) {
-        this.requestPreference = new RequestPreference(date, time, duration, commLanguage, driversLicence);
+        this.requestPreferences = new RequestPreference(date, time, duration, commLanguage, driversLicence);
     }
 }
