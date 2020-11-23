@@ -7,11 +7,11 @@ public class Request {
     public Date date;
     public String location;
     public int price;
-    public Boolean status;
-    public Preferences RequestPreference = null;
+    public int status;
+    public Preferences requestPreferences = null;
 
     // Constructor Declaration of Class
-    public Request(String typeOfLabour, String desc, Date date, String location, int price, Boolean status) {
+    public Request(String typeOfLabour, String desc, Date date, String location, int price, int status) {
         this.requestId = getRequestId();
         this.typeOfLabour = typeOfLabour;
         this.desc = desc;
@@ -32,7 +32,7 @@ public class Request {
         return this.requestId;
     }
 
-    public void setPreferences(String driversLicence, Date date, int time, int duration, String comLanguage) {
-
+    public void setPreferences(String driversLicence, Date date, int time, int duration, String commLanguage) {
+        this.requestPreferences = new RequestPreference(date, time, duration, commLanguage, driversLicence);
     }
 }
