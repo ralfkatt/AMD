@@ -2,7 +2,7 @@ import java.util.*;
 
 class Requester extends User {
     // Instance Variables
-    private List<Request> currentRequests;
+    private List<Request> currentRequests = null;
 
     // Constructor Declaration of Class
     public Requester(String name, String email, String address, String password) {
