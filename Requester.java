@@ -11,7 +11,7 @@ class Requester extends User {
 
     // method 1
     public Request createRequest(String typeOfLabour, String desc, Date date, String location, int price) {
-        Request request = new Request(typeOfLabour, desc, date, location, price, false);
+        Request request = new Request(typeOfLabour, desc, date, location, price, 0);
         return request;
     }
 }
