@@ -7,7 +7,7 @@ public class User {
     public String address;
     public String password;
     public PaymentMethod paymentMethod = null;
-    public List<Match> currentMatches = null;
+    public List<Match> currentMatches = new ArrayList<Match>();
 
     public List<Request> currentRequests = null;
 
