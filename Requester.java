@@ -10,9 +10,10 @@ class Requester extends User {
     }
 
     // method 1
-    public void createRequest(String typeOfLabour, String desc, Date date, String location, int price) {
+    public Request createRequest(String typeOfLabour, String desc, Date date, String location, int price) {
         Request request = new Request(typeOfLabour, desc, date, location, price, 0);
         this.currentRequests.add(request);
+        return request;
     }
 
     public void matchRequest(Request request, Matcher matcher) {

@@ -11,8 +11,7 @@ public class Driver {
 
         requester.paymentMethod = new Klarna("erik.com");
 
-        requester.createRequest("flytta", "mycket", new Date(2020, 11, 25), "bahamas", 1000);
-        Request request = requester.currentRequests.get(0);
+        Request request = requester.createRequest("flytta", "mycket", new Date(2020, 11, 25), "bahamas", 1000);
         request.setPreferences("AM", new Date(2020, 11, 25), 17, 2, "bahamas");
 
         Matcher matcher = Matcher.getInstance();
